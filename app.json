@@ -1,0 +1,38 @@
+{
+    "name": "TorrentSearchRobot",
+    "description": "A Torrent Search Robot Made With Python.",
+    "keywords": [
+        "telegram",
+        "torrent",
+        "searcher"
+    ],
+    "website": "https://github.com/CyberBoyAyush/TorrentSearchRobot",
+    "repository": "https://github.com/CyberBoyAyush/TorrentSearchRobot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        },
+        "START_MESSAGE": {
+            "description": "",
+            "value": "*Hello!!\nI Am Torrent Searcher Robot Helps You To Find Fast Magnet Links\n\n\nMade with ❤️ By @CyberBoyAyush*"
+        },
+        "FOOTER_TEXT": {
+            "description": "",
+            "value": "*Made with ❤️ by @CyberBoyAyush*",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
